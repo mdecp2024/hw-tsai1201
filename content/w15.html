@@ -169,8 +169,17 @@ img.add_border {
 <p>最後，<code>return total</code> 返回累加的偶數總和。</p>
 <p>心得:在設計並實現 <code>add_only_even(start, end)</code> 函式的過程中，讓我更加熟悉了如何使用 Python 中的基本語法和結構（如循環、條件判斷和函式設計），並且更清楚地理解了如何將這些基礎技能組合成有用的程式。不僅學習 Python 程式非常有幫助，也對解決日常的數據處理和計算問題提供了實際的參考。</p>
 <p></p>
-<p></p>
 <p>題目四:<a href="https://mdecp2024.github.io/hw-tsai1201/content/Brython.html?src=https://gist.githubusercontent.com/tsai1201/b0361ca265561771d750a48352cd1f1f/raw/49bd0e1984173b83c8f77a00302b8991482c141d/python_add_avoid_8(1-100).py">add_avoid_8</a></p>
+<p>程式語法:</p>
+<p><code>add_avoid_8(start, end)</code> 函式接受兩個參數 <code>start</code> 和 <code>end</code>，表示數字範圍。</p>
+<p><code>total = 0</code> 用來儲存累加的結果。</p>
+<p><code>for i in range(start, end + 1)</code> 用來遍歷從 <code>start</code> 到 <code>end</code> 之間的每個整數。</p>
+<p><code>if '8' in str(i)</code> 用來檢查數字 <code>i</code> 是否包含 "8"。這是通過將數字 <code>i</code> 轉換為字串，然後檢查其中是否含有 "8"。</p>
+<p><code>continue</code> 表示如果數字包含 "8"，則跳過這個數字，不進行累加。</p>
+<p>如果數字不包含 "8"，則使用 <code>total += i</code> 累加到總和。</p>
+<p>最後，<code>return total</code> 返回累加的結果。</p>
+<p></p>
+<p>心得:這次的實作過程讓我深入理解了如何在 Python 中設計具條件篩選的累加函式，並且能夠更靈活地處理篩選條件。特別是對於像「避開包含特定數字」這類需求。這次練習讓我更加熟悉如何在程式中靈活運用條件語句、字串操作和循環結構來解決實際問題。此外，也使我對 Python 語言的簡潔性和強大表達能力有了更深的體會，能夠用非常簡單的語法來完成相對複雜的邏輯處理。</p>
 <br />w14_hw << <a href='w14_hw.html'>Previous</a> <a href='HW 2.html'>Next</a> >> HW 2</div>
         
     <!-- footer -->
